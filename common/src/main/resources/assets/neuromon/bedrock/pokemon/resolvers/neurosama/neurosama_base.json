@@ -1,0 +1,19 @@
+{
+    "species": "neuromon:neurosama",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "neuromon:neurosama",
+            "model": "neuromon:neurosama.geo",
+            "texture": "neuromon:textures/pokemon/neurosama/neurosama.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "neuromon:textures/pokemon/neurosama/neurosama_shiny.png"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "cobblemon:simple_pokedex_def",
+    "id": "neuromon:neuroverse",
+    "sortOrder": 21,
+    "entries": [
+        "neuromon:gymbag",
+        "neuromon:vedal"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "species": "neuromon:vedal",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "neuromon:vedal",
+            "model": "neuromon:vedal.geo",
+            "texture": "neuromon:textures/pokemon/vedal/vedal.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "neuromon:textures/pokemon/vedal/vedal_shiny.png"
+        }
+    ]
+}

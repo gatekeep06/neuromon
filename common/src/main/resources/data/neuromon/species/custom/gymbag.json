@@ -1,0 +1,165 @@
+{
+    "implemented": true,
+    "name": "Gymbag",
+    "nationalPokedexNumber": 2127,
+    "primaryType": "normal",
+    "secondaryType": "steel",
+    "abilities": [
+        "levitate",
+        "h:levitate"
+    ],
+    "baseStats": {
+        "hp": 60,
+        "attack": 95,
+        "defence": 75,
+        "special_attack": 50,
+        "special_defence": 65,
+        "speed": 85
+    },
+    "behaviour": {
+        "resting": {
+            "canSleep": true,
+            "willSleepOnBed": true,
+            "depth": "normal",
+            "light": "0-4"
+        },
+        "moving": {
+            "fly": {
+                "canFly": true
+            },
+            "walk": {
+                "canWalk": false
+            },
+            "wanderChance": 60
+        },
+        "herd": {
+            "maxSize": 10,
+            "followDistance": "2-4",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "neuromon:gymbag shiny=false",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "neuromon:gymbag shiny",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "neuromon:vedal",
+                    "tier": 3,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "neuromon:neurosama",
+                    "tier": 4,
+                    "ignoresLevel": true
+                }
+            ]
+        }
+    },
+    "catchRate": 100,
+    "maleRatio": 0.5,
+    "shoulderMountable": false,
+    "baseExperienceYield": 170,
+    "experienceGroup": "medium_fast",
+    "eggCycles": 15,
+    "eggGroups": [
+        "amorphous",
+        "fairy"
+    ],
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "minecraft:raw_iron",
+                "quantityRange": "0-3"
+            }
+        ]
+    },
+    "moves": [
+        "1:odorsleuth",
+        "1:tackle",
+        "4:swagger",
+        "5:headbutt",
+        "6:gust",
+        "10:doublehit",
+        "12:recycle",
+        "16:encore",
+        "20:metalsound",
+        "24:knockoff",
+        "26:ironhead",
+        "32:batonpass",
+        "34:lockon",
+        "35:reflect",
+        "36:thunderwave",
+        "40:selfdestruct",
+        "44:whirlwind",
+        "50:gunkshot",
+        "55:shiftgear",
+        "egg:explosion",
+        "egg:switcheroo",
+        "egg:autotomize",
+        "egg:refresh",
+        "egg:tickle",
+        "egg:copycat",
+        "tm:lightscreen",
+        "tm:protect",
+        "tm:rest",
+        "tm:sleeptalk",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:trickroom",
+        "tm:substitute",
+        "tm:irondefense",
+        "tm:lastresort",
+        "tm:endure",
+        "tm:facade",
+        "tm:signalbeam",
+        "tm:defog",
+        "tm:voltswitch",
+        "tm:magnetbomb",
+        "tm:rapidspin",
+        "tm:uproar",
+        "tm:fly",
+        "tm:aerialace",
+        "tm:playrough",
+        "tm:detect",
+        "tm:willowisp",
+        "tm:confuseray",
+        "tm:metronome",
+        "tm:flash",
+        "tm:spikes",
+        "tm:poisonjab",
+        "tutor:toxic",
+        "tutor:mistyexplosion",
+        "tutor:playrough",
+        "tutor:toxicspikes",
+        "tutor:gravity"
+    ],
+    "labels": [
+        "custom",
+        "neuroverse"
+    ],
+    "pokedex": [
+        "neuromon.species.gymbag.desc"
+    ],
+    "baseScale": 0.75,
+    "hitbox": {
+        "width": 0.9,
+        "height": 1.9,
+        "fixed": false
+    },
+    "baseFriendship": 50,
+    "evYield": {
+        "hp": 0,
+        "attack": 1,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "height": 5,
+    "weight": 45,
+    "aspects": [],
+    "cannotDynamax": false
+}
