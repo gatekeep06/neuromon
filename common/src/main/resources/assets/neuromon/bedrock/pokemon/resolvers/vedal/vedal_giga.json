@@ -1,0 +1,22 @@
+{
+    "species": "neuromon:vedal",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [
+                "giga-form"
+            ],
+            "poser": "neuromon:vedal_giga",
+            "model": "neuromon:vedal_giga.geo",
+            "texture": "neuromon:textures/pokemon/vedal/vedal_giga.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "giga-form",
+                "shiny"
+            ],
+            "texture": "neuromon:textures/pokemon/vedal/vedal_giga_shiny.png"
+        }
+    ]
+}

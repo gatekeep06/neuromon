@@ -1,0 +1,19 @@
+{
+    "species": "neuromon:studysama",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "neuromon:studysama",
+            "model": "neuromon:studysama.geo",
+            "texture": "neuromon:textures/pokemon/studysama/studysama.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "neuromon:textures/pokemon/studysama/studysama.png"
+        }
+    ]
+}

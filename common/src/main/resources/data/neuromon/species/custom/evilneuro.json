@@ -1,11 +1,11 @@
 {
     "implemented": true,
     "name": "Neurosama",
-    "nationalPokedexNumber": 2121,
-    "primaryType": "fairy",
+    "nationalPokedexNumber": 2125,
+    "primaryType": "dark",
     "abilities": [
-        "flashfire",
-        "h:drought"
+        "abberdemon",
+        "h:abberdemon"
     ],
     "baseStats": {
         "hp": 38,

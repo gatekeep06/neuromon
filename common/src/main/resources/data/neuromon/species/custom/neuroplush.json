@@ -1,11 +1,11 @@
 {
     "implemented": true,
     "name": "Neurosama",
-    "nationalPokedexNumber": 2121,
+    "nationalPokedexNumber": 2122,
     "primaryType": "fairy",
     "abilities": [
-        "flashfire",
-        "h:drought"
+        "filter",
+        "h:filter"
     ],
     "baseStats": {
         "hp": 38,

@@ -11,10 +11,6 @@
         }
     },
     flags: {protect: 1, mirror: 1},
-    secondary: {
-        chance: 10,
-        volatileStatus: 'flinch',
-    },
     target: "allAdjacentFoes",
     type: "Fire",
     contestType: "Cool"
