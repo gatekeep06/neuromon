@@ -1,0 +1,15 @@
+{
+    "id": "neuromon:evilplushie",
+    "speciesId": "neuromon:evilplushie",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

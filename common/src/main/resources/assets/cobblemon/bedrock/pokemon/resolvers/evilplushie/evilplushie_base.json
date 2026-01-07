@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:evilplushie",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:evilplushie",
+            "model": "cobblemon:evilplushie.geo",
+            "texture": "cobblemon:textures/pokemon/evilplushie/evilplushie.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/evilplushie/evilplushie_shiny.png"
+        }
+    ]
+}

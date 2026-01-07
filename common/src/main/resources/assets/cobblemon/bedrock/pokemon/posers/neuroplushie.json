@@ -1,0 +1,84 @@
+{
+    "rootBone": "neuroplushie",
+    "portraitScale": 1.2,
+    "portraitTranslation": [-0.1, 2.3, 0],
+    "profileScale": 0.45,
+    "profileTranslation": [0, 1.1, 0],
+    "animations": {},
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head_ai', 1, 1, 0, 0, 180, -180)",
+                "q.bedrock('neuroplushie', 'battle_idle')"
+            ]
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": [
+                "q.look('head_ai', 1, 1, 0, 0, 180, -180)",
+                "q.bedrock('neuroplushie', 'ground_idle')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head_ai', 1, 1, 0, 0, 180, -180)",
+                "q.bedrock('neuroplushie', 'ground_walk')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "isTouchingWater": false,
+            "animations": [
+                "q.bedrock('neuroplushie', 'sleep')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "hover": {
+            "poseTypes": ["HOVER"],
+            "isBattle": false,
+            "animations": [
+                "q.bedrock('neuroplushie', 'air_idle')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "fly": {
+            "poseTypes": ["FLY"],
+            "isBattle": false,
+            "animations": [
+                "q.bedrock('neuroplushie', 'air_fly')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        }
+    }
+}

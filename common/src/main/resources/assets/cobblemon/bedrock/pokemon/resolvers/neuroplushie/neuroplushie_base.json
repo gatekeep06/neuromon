@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:neuroplushie",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:neuroplushie",
+            "model": "cobblemon:neuroplushie.geo",
+            "texture": "cobblemon:textures/pokemon/neuroplushie/neuroplushie.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/neuroplushie/neuroplushie_shiny.png"
+        }
+    ]
+}

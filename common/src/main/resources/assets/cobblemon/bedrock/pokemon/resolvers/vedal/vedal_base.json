@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:vedal",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:vedal",
+            "model": "cobblemon:vedal.geo",
+            "texture": "cobblemon:textures/pokemon/vedal/vedal.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/vedal/vedal_shiny.png"
+        }
+    ]
+}

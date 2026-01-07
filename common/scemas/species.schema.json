@@ -1,0 +1,290 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/schemas/entity.schema.json",
+    "$defs": {
+        "stats": {
+            "type": "object",
+            "properties": {
+                "hp": { "type": "integer" },
+                "attack": { "type": "integer" },
+                "defence": { "type": "integer" },
+                "special_attack": { "type": "integer" },
+                "special_defence": { "type": "integer" },
+                "speed": { "type": "integer" }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "nationalPokedexNumber": { "type": "integer" },
+        "baseStats": { "$ref": "#/$defs/stats" },
+        "maleRatio": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
+        "catchRate": { "type": "integer" },
+        "baseScale": { "type": "number" },
+        "baseExperienceYield": { "type": "integer" },
+        "baseFriendship": { "type": "integer" },
+        "evYield": { "$ref": "#/$defs/stats" },
+        "experienceGroup": {
+            "type": "string",
+            "enum": ["erratic", "fast", "medium_fast", "medium_slow", "slow", "fluctuating"]
+        },
+        "hitbox": {
+            "type": "object",
+            "properties": {
+                "width": { "type": "number" },
+                "height": { "type": "number" },
+                "eyeHeight": { "type": "number" },
+                "fixed": { "type": "boolean" }
+            }
+        },
+        "primaryType": { "type": "string" },
+        "secondaryType": { "type": "string" },
+        "abilities": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "shoulderMountable": { "type": "boolean" },
+        "shoulderEffects": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": { "type": "string", "examples": ["potion_effect"] },
+                    "effect": { "type": "string" },
+                    "amplifier": { "type": "number" },
+                    "ambient": { "type": "boolean" },
+                    "showParticles": { "type":  "boolean"},
+                    "showIcon": { "type": "boolean" }
+                }
+            }
+        },
+        "moves": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "features": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "standingEyeHeight": { "type": "number" },
+        "swimmingEyeHeight": { "type": "number" },
+        "flyingEyeHeight": { "type": "number" },
+        "behaviour": {
+            "type": "object",
+            "properties": {
+                "resting": {
+                    "type": "object",
+                    "properties": {
+                        "canSleep": { "type": "boolean" },
+                        "times": { "type": "string" },
+                        "blocks": {
+                            "type": "array",
+                            "items": { "type": "string" }
+                        },
+                        "biomes": {
+                            "type": "array",
+                            "items": { "type": "string" }
+                        },
+                        "fluids": {
+                            "type": "array",
+                            "items": { "type": "string" }
+                        },
+                        "light": { "type": "string" },
+                        "depth": { "type": "string", "examples": ["comatose", "normal"] },
+                        "canSeeSky": { "type": "boolean" },
+                        "skyLight": { "type": "string" },
+                        "drowsyChance": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+                        "rouseChance": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+                    }
+                },
+                "moving": {
+                    "type": "object",
+                    "properties": {
+                        "walk": {
+                            "type": "object",
+                            "properties": {
+                                "canWalk": { "type": "boolean" },
+                                "avoidsLand": { "type": "boolean" },
+                                "walkSpeed": { "type": "string" }
+                            }
+                        },
+                        "swim": {
+                            "type": "object",
+                            "properties": {
+                                "avoidsWater": { "type": "boolean" },
+                                "canSwimInWater": { "type": "boolean" },
+                                "swimSpeed": { "type": "string" },
+                                "canBreatheUnderwater": { "type": "boolean" },
+                                "canWalkOnWater": { "type": "boolean" },
+                                "canSwimInLava": { "type": "boolean" },
+                                "canBreatheUnderlava": { "type": "boolean" },
+                                "canWalkOnLava": { "type": "boolean" }
+                            }
+                        },
+                        "fly": {
+                            "type": "object",
+                            "properties": {
+                                "canFly": { "type": "boolean" },
+                                "flySpeedHorizontal": { "type": "string" }
+                            }
+                        },
+                        "stepHeight": { "type": "number" },
+                        "wanderChance": { "type": "integer" },
+                        "wanderSpeed": { "type": "number" },
+                        "canLook": { "type": "boolean" }
+                    }
+                },
+                "idle": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "fireImmune": { "type": "boolean" },
+                "dampensVibrations": { "type": "boolean" },
+                "entityInteract": {
+                    "type": "object",
+                    "properties": {
+                        "avoidedByCreeper": { "type": "boolean" },
+                        "avoidedByPhantom": { "type": "boolean" },
+                        "avoidedByFox": { "type": "boolean" },
+                        "avoidedBySkeleton": { "type": "boolean" }
+                    }
+                },
+                "lightningHit": {
+                    "type": "object",
+                    "properties": {
+                        "rotateFeatures": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "key": { "type": "string" },
+                                    "chain": { 
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "blockInteract": {
+                    "type": "object",
+                    "properties": {
+                        "immuneToSweetBerryBushBlock": { "type": "boolean" },
+                        "canStandOnPowderSnow": { "type": "boolean" },
+                        "canPathThroughSaccLeaves": { "type": "boolean" }
+                    }
+                },
+                "combat": {
+                    "type": "object",
+                    "properties": {
+                        "willDefendSelf": { "type": "boolean" },
+                        "willFlee": { "type": "boolean" },
+                        "willDefendOwner": { "type": "boolean" },
+                        "fightsMelee": { "type": "boolean" }
+                    }
+                },
+                "herd": {
+                    "type": "object",
+                    "properties": {
+                        "toleratedLeaders": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "pokemon": { "type": "string" },
+                                    "tier": { "type": "integer" },
+                                    "ignoresLevel": { "type": "boolean" },
+                                    "followDistance": { "type": "string" }
+                                }
+                            }
+                        },
+                        "maxSize": {"type": "integer" },
+                        "followDistance": { "type": "string" }
+                    }
+                },
+                "characteristicRainbow": { "type": "boolean" },
+                "itemInteract": {
+                    "type": "object",
+                    "properties": {
+                        "desiredItems": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "item": { "type": "string" },
+                                    "pickupPriority": { "type": "integer" },
+                                    "fullnessValue": { "type": "integer" },
+                                    "returnItem": { "type": "string" },
+                                    "onUseEffect": { "type": "string"}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "pokedex": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "drops": {
+            "type": "object",
+            "properties": {
+                "entries": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "amount": { "type": "string" }
+            }
+        },
+        "eggCycles": { "type": "integer" },
+        "eggGroups": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["monster", "water_1", "bug", "flying", "field", "fairy", "grass", "human_like", "water_3", "mineral", "amorphous", "water_2", "ditto", "dragon", "undiscovered"]
+            }
+        },
+        "dynamaxBlocked": { "type": "boolean" },
+        "implemented": { "type": "boolean" },
+        "baseAI": {
+            "type": "array",
+            "items": { "type": "object" }
+        },
+        "ai": {
+            "type": "array",
+            "items": { "type": "object" }
+        },
+        "height": { "type": "number" },
+        "weight": { "type": "number" },
+        "forms": {
+            "type": "array",
+            "items": { "type": "object" }
+        },
+        "riding": { "type": "object" },
+        "labels": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "evolutions": {
+            "type": "array",
+            "items": { "type": "object" }
+        },
+        "preEvolution": { "type": "string" },
+        "battleTheme": { "type": "string" },
+        "lightingData": {
+            "type": "object",
+            "properties": {
+                "lightLevel": { "type": "integer" },
+                "liquidGlowMode": {
+                    "type": "string",
+                    "enum": ["LAND", "UNDERWATER", "BOTH"]
+                }
+            }
+        }
+    }
+}

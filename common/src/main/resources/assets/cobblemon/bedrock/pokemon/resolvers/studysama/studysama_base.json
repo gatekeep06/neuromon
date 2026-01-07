@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:studysama",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:studysama",
+            "model": "cobblemon:studysama.geo",
+            "texture": "cobblemon:textures/pokemon/studysama/studysama.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/studysama/studysama.png"
+        }
+    ]
+}

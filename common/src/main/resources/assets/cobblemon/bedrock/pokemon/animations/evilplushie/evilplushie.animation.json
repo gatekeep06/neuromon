@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.evilplushie.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-17.5, 0, 0],
+					"position": [0, 4, 0]
+				},
+				"head_ai": {
+					"rotation": [0, 7.5, 0]
+				},
+				"head": {
+					"rotation": [7.5, 0, 0]
+				},
+				"hair_tail_left": {
+					"rotation": [0, 0, -12.5]
+				},
+				"hair_tail_right": {
+					"rotation": [0, 0, 22.5]
+				},
+				"arm_left": {
+					"rotation": [-3.90399, -17.07228, 13.08619]
+				},
+				"arm_right": {
+					"rotation": [0, -7.5, 25]
+				},
+				"leg_left": {
+					"rotation": [-22.5, 0, 0]
+				},
+				"leg_right": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		},
+		"animation.evilplushie.ground_idle": {
+			"loop": true
+		}
+	}
+}

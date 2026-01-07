@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:neurosama",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:neurosama",
+            "model": "cobblemon:neurosama.geo",
+            "texture": "cobblemon:textures/pokemon/neurosama/neurosama.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/neurosama/neurosama_shiny.png"
+        }
+    ]
+}

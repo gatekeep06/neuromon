@@ -1,0 +1,21 @@
+{
+    "id": "neuromon:vedal",
+    "speciesId": "neuromon:vedal",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        },
+        {
+            "displayForm": "Giga",
+            "unlockForms": [
+                "Giga"
+            ]
+        }
+    ],
+    "variations": []
+}

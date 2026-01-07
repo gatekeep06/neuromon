@@ -1,0 +1,120 @@
+{
+    "name": "Studysama",
+    "nationalPokedexNumber": 2121,
+    "baseStats": {
+        "hp": 21,
+        "attack": 21,
+        "defence": 21,
+        "special_attack": 21,
+        "special_defence": 21,
+        "speed": 21
+    },
+    "maleRatio": 0.0,
+    "catchRate": 190,
+    "baseScale": 0.6,
+    "baseExperienceYield": 40,
+    "baseFriendship": 50,
+    "evYield": {
+        "hp": 1
+    },
+    "experienceGroup": "slow",
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
+    "primaryType": "ghost",
+    "abilities": [
+        "cursedbody",
+        "h:cursedbody"
+    ],
+    "shoulderMountable": true,
+    "moves": [
+        "1:teleport",
+        "6:confuseray",
+        "24:nightshade",
+        "24:shadowsneak",
+        "36:hex",
+        "tutor:poltergeist"
+    ],
+    "features": [],
+    "behaviour": {
+        "moving": {
+            "walk": {
+                "walkSpeed": "0.2"
+            },
+            "fly": {
+                "canFly": true,
+                "flySpeedHorizontal": "0.4"
+            }
+        },
+        "herd": {
+            "maxSize": 10,
+            "toleratedLeaders": [
+                {
+                    "pokemon": "vedal",
+                    "tier": 1,
+                    "ignoresLevel": true
+                }
+            ]
+        }
+    },
+    "pokedex": [
+        "cobblemon.species.studysama.desc"
+    ],
+    "drops": {
+
+    },
+    "eggGroups": ["undiscovered"],
+    "dynamaxBlocked": false,
+    "implemented": true,
+    "height": 10,
+    "weight": 5,
+    "forms": [],
+    "labels": [
+        "custom",
+        "neuroverse",
+        "legendary",
+        "baby"
+    ],
+    "evolutions": [
+        {
+            "id": "studysama_neuroplushie",
+            "variant": "level_up",
+            "result": "neuroplushie",
+            "consumeHeldItem": false,
+            "learnableMoves": [],
+            "requirements": [
+                {
+                    "variant": "friendship",
+                    "amount": 160
+                },
+                {
+                    "variant": "time_range",
+                    "range": "day"
+                }
+            ]
+        },
+        {
+            "id": "studysama_evilplushie",
+            "variant": "level_up",
+            "result": "evilplushie",
+            "consumeHeldItem": false,
+            "learnableMoves": [],
+            "requirements": [
+                {
+                    "variant": "friendship",
+                    "amount": 160
+                },
+                {
+                    "variant": "time_range",
+                    "range": "night"
+                }
+            ]
+        }
+    ],
+    "lightingData": {
+        "lightLevel": 5,
+        "liquidGlowMode": "BOTH"
+    }
+}

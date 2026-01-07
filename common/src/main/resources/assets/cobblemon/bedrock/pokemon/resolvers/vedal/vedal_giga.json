@@ -1,0 +1,22 @@
+{
+    "species": "cobblemon:vedal",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [
+                "giga-form"
+            ],
+            "poser": "cobblemon:vedal_giga",
+            "model": "cobblemon:vedal_giga.geo",
+            "texture": "cobblemon:textures/pokemon/vedal/vedal_giga.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "giga-form",
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/vedal/vedal_giga_shiny.png"
+        }
+    ]
+}

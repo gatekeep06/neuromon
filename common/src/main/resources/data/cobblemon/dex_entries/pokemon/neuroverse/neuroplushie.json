@@ -1,0 +1,15 @@
+{
+    "id": "neuromon:neuroplushie",
+    "speciesId": "neuromon:neuroplushie",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

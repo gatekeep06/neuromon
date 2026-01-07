@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.neuroplushie.air_idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"body": {
+					"position": [0, 18, 0]
+				},
+				"arm_left": {
+					"rotation": [0, 0, -45]
+				},
+				"arm_right": {
+					"rotation": [0, 0, 45]
+				},
+				"leg_left": {
+					"rotation": [20, 0, 0]
+				},
+				"leg_right": {
+					"rotation": [5, 0, 0]
+				},
+				"hair_tail_left": {
+					"rotation": ["-5+q.anim_time*90*60", 0, -45],
+					"position": [0, 0.5, 1]
+				},
+				"hair_tail_right": {
+					"rotation": ["-5+q.anim_time*90*60", 0, 45],
+					"position": [0, 0.5, 1]
+				}
+			}
+		}
+	}
+}

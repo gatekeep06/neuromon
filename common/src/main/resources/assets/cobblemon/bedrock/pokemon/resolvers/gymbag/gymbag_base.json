@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:gymbag",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:gymbag",
+            "model": "cobblemon:gymbag.geo",
+            "texture": "cobblemon:textures/pokemon/gymbag/gymbag.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/gymbag/gymbag_shiny.png"
+        }
+    ]
+}
