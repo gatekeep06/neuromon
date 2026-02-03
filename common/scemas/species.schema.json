@@ -68,40 +68,7 @@
                     "enum": ["LAND", "UNDERWATER", "BOTH"]
                 }
             }
-        }
-    },
-    "type": "object",
-    "properties": {
-        "name": { "type": "string" },
-        "nationalPokedexNumber": { "type": "integer" },
-        "baseStats": { "$ref": "#/$defs/stats" },
-        "maleRatio": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
-        "catchRate": { "type": "integer" },
-        "baseScale": { "type": "number" },
-        "baseExperienceYield": { "type": "integer" },
-        "baseFriendship": { "type": "integer" },
-        "evYield": { "$ref": "#/$defs/stats" },
-        "experienceGroup": { "$ref": "#/$defs/experienceGroup" },
-        "hitbox": { "$ref": "#/$defs/hitbox" },
-        "primaryType": { "type": "string" },
-        "secondaryType": { "type": "string" },
-        "abilities": {
-            "type": "array",
-            "items": { "type": "string" }
         },
-        "shoulderMountable": { "type": "boolean" },
-        "shoulderEffects": { "$ref": "#/$defs/effects" },
-        "moves": {
-            "type": "array",
-            "items": { "type": "string" }
-        },
-        "features": {
-            "type": "array",
-            "items": { "type": "string" }
-        },
-        "standingEyeHeight": { "type": "number" },
-        "swimmingEyeHeight": { "type": "number" },
-        "flyingEyeHeight": { "type": "number" },
         "behaviour": {
             "type": "object",
             "properties": {
@@ -191,7 +158,7 @@
                                 "type": "object",
                                 "properties": {
                                     "key": { "type": "string" },
-                                    "chain": { 
+                                    "chain": {
                                         "type": "array",
                                         "items": { "type": "string" }
                                     }
@@ -256,7 +223,41 @@
                     }
                 }
             }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "nationalPokedexNumber": { "type": "integer" },
+        "baseStats": { "$ref": "#/$defs/stats" },
+        "maleRatio": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
+        "catchRate": { "type": "integer" },
+        "baseScale": { "type": "number" },
+        "baseExperienceYield": { "type": "integer" },
+        "baseFriendship": { "type": "integer" },
+        "evYield": { "$ref": "#/$defs/stats" },
+        "experienceGroup": { "$ref": "#/$defs/experienceGroup" },
+        "hitbox": { "$ref": "#/$defs/hitbox" },
+        "primaryType": { "type": "string" },
+        "secondaryType": { "type": "string" },
+        "abilities": {
+            "type": "array",
+            "items": { "type": "string" }
         },
+        "shoulderMountable": { "type": "boolean" },
+        "shoulderEffects": { "$ref": "#/$defs/effects" },
+        "moves": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "features": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "standingEyeHeight": { "type": "number" },
+        "swimmingEyeHeight": { "type": "number" },
+        "flyingEyeHeight": { "type": "number" },
+        "behaviour": { "$ref": "#/$defs/behaviour" },
         "pokedex": {
             "type": "array",
             "items": { "type": "string" }
@@ -334,6 +335,11 @@
                     "gigantamaxMove": { "type": "string" },
                     "battleTheme": { "type": "string" },
                     "lightingData": { "$ref": "#/$defs/lightingData" },
+                    "behaviour": { "$ref": "#/$defs/behaviour" },
+                    "aspects": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
                     "battleOnly": { "type": "boolean" }
                 }
             }
