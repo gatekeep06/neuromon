@@ -1,9 +1,9 @@
 {
     "rootBone": "vedal",
-    "portraitScale": 1.2,
-    "portraitTranslation": [-0.1, 2.3, 0],
-    "profileScale": 0.45,
-    "profileTranslation": [0, 1.1, 0],
+    "portraitScale": 1.61,
+    "portraitTranslation": [-0.46, -0.75, 0],
+    "profileScale": 0.6,
+    "profileTranslation": [0, 0.78, 0],
     "animations": {
         "cry": "q.bedrock_stateful('vedal', 'cry')"
     },
@@ -19,7 +19,6 @@
         },
         "standing": {
             "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-            "isBattle": false,
             "animations": [
                 "q.look('head')",
                 "q.bedrock('vedal', 'ground_idle')"
@@ -33,6 +32,24 @@
                 "q.bedrock('vedal', 'ground_walk')"
             ],
             "quirks": ["q.bedrock_quirk('vedal', 'blink')"]
+        },
+        "shoulder": {
+            "poseTypes": ["SHOULDER_RIGHT", "SHOULDER_LEFT"],
+            "animations": [
+                "q.look('shoulder_pivot', 1, 1, 360, -360, 360, -360)",
+                "q.bedrock('vedal', 'ground_idle')"
+            ],
+            "quirks": ["q.bedrock_quirk('vedal', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [0, -13.2, 0]
+                },
+                {
+                    "part": "shoulder_pivot",
+                    "position": [-5.5, 0, 0]
+                }
+            ]
         }
     }
 }
