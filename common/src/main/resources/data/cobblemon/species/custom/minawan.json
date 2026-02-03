@@ -1,0 +1,362 @@
+{
+    "name": "Minawan",
+    "nationalPokedexNumber": 2131,
+    "baseStats": {
+        "hp": 80,
+        "attack": 95,
+        "defence": 70,
+        "special_attack": 40,
+        "special_defence": 70,
+        "speed": 85
+    },
+    "maleRatio": 0.5,
+    "catchRate": 90,
+    "baseScale": 0.75,
+    "baseExperienceYield": 40,
+    "baseFriendship": 50,
+    "evYield": {
+        "hp": 1
+    },
+    "experienceGroup": "medium_fast",
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
+    "primaryType": "normal",
+    "abilities": [
+        "scrappy",
+        "h:guarddog"
+    ],
+    "moves": [
+
+    ],
+    "features": [],
+    "behaviour": {
+
+    },
+    "pokedex": [
+
+    ],
+    "drops": {
+
+    },
+    "eggCycles": 120,
+    "eggGroups": ["field", "fairy"],
+    "dynamaxBlocked": false,
+    "implemented": false,
+    "height": 1,
+    "weight": 1,
+    "forms": [
+        {
+            "name": "Fire",
+            "primaryType": "fire",
+            "aspects": [
+                "fire-minawan"
+            ],
+            "abilities": [
+                "flashfire",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Water",
+            "primaryType": "water",
+            "aspects": [
+                "water-minawan"
+            ],
+            "abilities": [
+                "waterabsorb",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Grass",
+            "primaryType": "grass",
+            "aspects": [
+                "grass-minawan"
+            ],
+            "abilities": [
+                "chlorophyll",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Electric",
+            "primaryType": "electric",
+            "aspects": [
+                "electric-minawan"
+            ],
+            "abilities": [
+                "voltabsorb",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Ice",
+            "primaryType": "ice",
+            "aspects": [
+                "ice-minawan"
+            ],
+            "abilities": [
+                "icebody",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Fighting",
+            "primaryType": "fighting",
+            "aspects": [
+                "fighting-minawan"
+            ],
+            "abilities": [
+                "innerfocus",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Poison",
+            "primaryType": "poison",
+            "aspects": [
+                "poison-minawan"
+            ],
+            "abilities": [
+                "poisonpoint",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Ground",
+            "primaryType": "ground",
+            "aspects": [
+                "ground-minawan"
+            ],
+            "abilities": [
+                "sandforce",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Flying",
+            "primaryType": "flying",
+            "aspects": [
+                "flying-minawan"
+            ],
+            "abilities": [
+                "hustle",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Psychic",
+            "primaryType": "psychic",
+            "aspects": [
+                "psychic-minawan"
+            ],
+            "abilities": [
+                "synchronize",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Bug",
+            "primaryType": "bug",
+            "aspects": [
+                "bug-minawan"
+            ],
+            "abilities": [
+                "shielddust",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Rock",
+            "primaryType": "rock",
+            "aspects": [
+                "rock-minawan"
+            ],
+            "abilities": [
+                "sandrush",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Ghost",
+            "primaryType": "ghost",
+            "aspects": [
+                "ghost-minawan"
+            ],
+            "abilities": [
+                "levitate",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Dragon",
+            "primaryType": "dragon",
+            "aspects": [
+                "dragon-minawan"
+            ],
+            "abilities": [
+                "roughskin",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Dark",
+            "primaryType": "dark",
+            "aspects": [
+                "dark-minawan"
+            ],
+            "abilities": [
+                "intimidate",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Steel",
+            "primaryType": "steel",
+            "aspects": [
+                "steel-minawan"
+            ],
+            "abilities": [
+                "heavymetal",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Fairy",
+            "primaryType": "fairy",
+            "aspects": [
+                "fairy-minawan"
+            ],
+            "abilities": [
+                "magicguard",
+                "h:guarddog"
+            ],
+            "drops": {
+
+            },
+            "moves": [
+
+            ],
+            "battleOnly": false
+        }
+    ],
+    "labels": [
+        "custom",
+        "neuroverse"
+    ]
+}

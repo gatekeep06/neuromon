@@ -1,0 +1,54 @@
+{
+    "name": "Cerby",
+    "nationalPokedexNumber": 2131,
+    "baseStats": {
+        "hp": 80,
+        "attack": 95,
+        "defence": 70,
+        "special_attack": 40,
+        "special_defence": 70,
+        "speed": 85
+    },
+    "maleRatio": 0.5,
+    "catchRate": 90,
+    "baseScale": 0.75,
+    "baseExperienceYield": 40,
+    "baseFriendship": 50,
+    "evYield": {
+        "hp": 1
+    },
+    "experienceGroup": "medium_fast",
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
+    "primaryType": "normal",
+    "abilities": [
+        "guarddog",
+        "h:guarddog"
+    ],
+    "moves": [
+
+    ],
+    "features": [],
+    "behaviour": {
+
+    },
+    "pokedex": [
+
+    ],
+    "drops": {
+
+    },
+    "eggCycles": 120,
+    "eggGroups": ["field", "fairy"],
+    "dynamaxBlocked": false,
+    "implemented": false,
+    "height": 1,
+    "weight": 1,
+    "labels": [
+        "custom",
+        "neuroverse"
+    ]
+}

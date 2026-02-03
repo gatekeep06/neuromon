@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:staz",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:staz",
+            "model": "cobblemon:staz.geo",
+            "texture": "cobblemon:textures/pokemon/staz/staz.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/staz/staz_shiny.png"
+        }
+    ]
+}

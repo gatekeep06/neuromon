@@ -1,0 +1,117 @@
+{
+    "id": "cobblemon:minawan",
+    "speciesId": "cobblemon:minawan",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        },
+        {
+            "displayForm": "Fire",
+            "unlockForms": [
+                "Fire"
+            ]
+        },
+        {
+            "displayForm": "Water",
+            "unlockForms": [
+                "Water"
+            ]
+        },
+        {
+            "displayForm": "Grass",
+            "unlockForms": [
+                "Grass"
+            ]
+        },
+        {
+            "displayForm": "Electric",
+            "unlockForms": [
+                "Electric"
+            ]
+        },
+        {
+            "displayForm": "Ice",
+            "unlockForms": [
+                "Ice"
+            ]
+        },
+        {
+            "displayForm": "Fighting",
+            "unlockForms": [
+                "Fighting"
+            ]
+        },
+        {
+            "displayForm": "Poison",
+            "unlockForms": [
+                "Poison"
+            ]
+        },
+        {
+            "displayForm": "Ground",
+            "unlockForms": [
+                "Ground"
+            ]
+        },
+        {
+            "displayForm": "Flying",
+            "unlockForms": [
+                "Flying"
+            ]
+        },
+        {
+            "displayForm": "Psychic",
+            "unlockForms": [
+                "Psychic"
+            ]
+        },
+        {
+            "displayForm": "Bug",
+            "unlockForms": [
+                "Bug"
+            ]
+        },
+        {
+            "displayForm": "Rock",
+            "unlockForms": [
+                "Rock"
+            ]
+        },
+        {
+            "displayForm": "Ghost",
+            "unlockForms": [
+                "Ghost"
+            ]
+        },
+        {
+            "displayForm": "Dragon",
+            "unlockForms": [
+                "Dragon"
+            ]
+        },
+        {
+            "displayForm": "Dark",
+            "unlockForms": [
+                "Dark"
+            ]
+        },
+        {
+            "displayForm": "Steel",
+            "unlockForms": [
+                "Steel"
+            ]
+        },
+        {
+            "displayForm": "Fairy",
+            "unlockForms": [
+                "Fairy"
+            ]
+        }
+    ],
+    "variations": []
+}

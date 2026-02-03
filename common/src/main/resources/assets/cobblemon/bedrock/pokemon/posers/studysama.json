@@ -1,15 +1,17 @@
 {
     "rootBone": "studysama",
-    "portraitScale": 1.2,
-    "portraitTranslation": [-0.1, 2.3, 0],
-    "profileScale": 0.45,
-    "profileTranslation": [0, 1.1, 0],
+    "portraitScale": 2.67,
+    "portraitTranslation": [-0.04, -0.63, 0],
+    "profileScale": 0.9,
+    "profileTranslation": [0, 0.4, 0],
     "animations": {},
     "poses": {
         "standing": {
             "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
             "animations": [
                 "q.look('head_ai')",
+                "q.look('tail_left', -1, 0)",
+                "q.look('tail_right', -1, 0)",
                 "q.bedrock('studysama', 'ground_idle')"
             ]
         },
@@ -17,12 +19,29 @@
             "poseTypes": ["WALK"],
             "animations": [
                 "q.look('head_ai')",
+                "q.look('tail_left', -1, 0)",
+                "q.look('tail_right', -1, 0)",
                 "q.bedrock('studysama', 'ground_walk')"
+            ]
+        },
+        "hover": {
+            "poseTypes": ["HOVER", "FLY"],
+            "isBattle": false,
+            "animations": [
+                "q.look('head_ai')",
+                "q.look('tail_left', -1, 0)",
+                "q.look('tail_right', -1, 0)",
+                "q.bedrock('studysama', 'air_idle')"
             ]
         },
         "shoulder_left": {
             "poseTypes": ["SHOULDER_LEFT"],
-            "animations": ["q.look('head_ai')", "q.bedrock('studysama', 'shoulder')"],
+            "animations": [
+                "q.look('head_ai')",
+                "q.look('tail_left', -1, 0)",
+                "q.look('tail_right', -1, 0)",
+                "q.bedrock('studysama', 'shoulder')"
+            ],
             "transformedParts": [
                 {
                     "part": "body",
@@ -32,7 +51,12 @@
         },
         "shoulder_right": {
             "poseTypes": ["SHOULDER_RIGHT"],
-            "animations": ["q.look('head_ai')", "q.bedrock('studysama', 'shoulder')"],
+            "animations": [
+                "q.look('head_ai')",
+                "q.look('tail_left', -1, 0)",
+                "q.look('tail_right', -1, 0)",
+                "q.bedrock('studysama', 'shoulder')"
+            ],
             "transformedParts": [
                 {
                     "part": "body",

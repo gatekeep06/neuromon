@@ -1,0 +1,33 @@
+{
+    "rootBone": "staz",
+    "portraitScale": 1.2,
+    "portraitTranslation": [-0.1, 2.3, 0],
+    "profileScale": 0.45,
+    "profileTranslation": [0, 1.1, 0],
+    "animations": {},
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('staz', 'battle_idle')"
+            ]
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('staz', 'ground_idle')"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('staz', 'ground_walk')"
+            ]
+        }
+    }
+}

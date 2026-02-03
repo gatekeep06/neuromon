@@ -10,17 +10,17 @@
         "speed": 21
     },
     "maleRatio": 0.0,
-    "catchRate": 190,
+    "catchRate": 3,
     "baseScale": 0.6,
     "baseExperienceYield": 40,
-    "baseFriendship": 50,
+    "baseFriendship": 0,
     "evYield": {
         "hp": 1
     },
     "experienceGroup": "slow",
     "hitbox": {
-        "width": 1,
-        "height": 1,
+        "width": 0.75,
+        "height": 1.1,
         "fixed": false
     },
     "primaryType": "ghost",
@@ -57,24 +57,44 @@
                     "ignoresLevel": true
                 }
             ]
+        },
+        "blockInteract": {
+            "immuneToSweetBerryBushBlock": true,
+            "canStandOnPowderSnow": true
+        },
+        "combat": {
+            "willFlee": false
         }
     },
     "pokedex": [
         "cobblemon.species.studysama.desc"
     ],
     "drops": {
-
+        "amount": "2",
+        "entries": [
+            {
+                "item": "cobblemon:spell_tag",
+                "percentage": 25
+            },
+            {
+                "item": "cobblemon:payapa_berry",
+                "percentage": 20
+            },
+            {
+                "item": "minecraft:phantom_membrane",
+                "quantityRange": "1-3"
+            }
+        ]
     },
     "eggGroups": ["undiscovered"],
     "dynamaxBlocked": false,
     "implemented": true,
-    "height": 10,
+    "height": 5,
     "weight": 5,
     "forms": [],
     "labels": [
         "custom",
         "neuroverse",
-        "legendary",
         "baby"
     ],
     "evolutions": [
@@ -83,11 +103,17 @@
             "variant": "level_up",
             "result": "neuroplushie",
             "consumeHeldItem": false,
-            "learnableMoves": [],
+            "learnableMoves": [
+                "sistertherapy"
+            ],
             "requirements": [
                 {
                     "variant": "friendship",
                     "amount": 160
+                },
+                {
+                    "variant": "party_member",
+                    "target": "vedal"
                 },
                 {
                     "variant": "time_range",
@@ -100,11 +126,17 @@
             "variant": "level_up",
             "result": "evilplushie",
             "consumeHeldItem": false,
-            "learnableMoves": [],
+            "learnableMoves": [
+                "sistertherapy"
+            ],
             "requirements": [
                 {
                     "variant": "friendship",
                     "amount": 160
+                },
+                {
+                    "variant": "party_member",
+                    "target": "vedal"
                 },
                 {
                     "variant": "time_range",

@@ -1,0 +1,13 @@
+{
+    "type": "choice",
+    "keys": [
+        "mood"
+    ],
+    "default": "happy",
+    "choices": [
+        "happy",
+        "angry"
+    ],
+    "isAspect": true,
+    "aspectFormat": "mood-{{choice}}"
+}

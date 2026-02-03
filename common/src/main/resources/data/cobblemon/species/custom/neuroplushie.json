@@ -10,13 +10,12 @@
         "speed": 95
     },
     "maleRatio": 0.0,
-    "catchRate": 190,
+    "catchRate": 3,
     "baseScale": 0.6,
-    "baseExperienceYield": 40,
-    "baseFriendship": 50,
+    "baseExperienceYield": 140,
+    "baseFriendship": 0,
     "evYield": {
-        "special_attack": 1,
-        "speed": 1
+        "special_attack": 2
     },
     "experienceGroup": "slow",
     "hitbox": {
@@ -31,7 +30,78 @@
     ],
     "shoulderMountable": true,
     "moves": [
-
+        "1:round",
+        "1:confusion",
+        "1:playnice",
+        "1:conversion",
+        "5:sing",
+        "10:flatter",
+        "12:babydolleyes",
+        "18:drainingkiss",
+        "21:memento",
+        "25:playrough",
+        "28:conversion2",
+        "32:encore",
+        "36:roleplay",
+        "42:hypervoice",
+        "50:nastyplot",
+        "56:alluringvoice",
+        "60:moonblast",
+        "65:healingwish",
+        "85:perishsong",
+        "tm:pounce",
+        "tm:thief",
+        "tm:spite",
+        "tm:overheat",
+        "tm:teleport",
+        "tm:confuseray",
+        "tm:nightshade",
+        "tm:shadowsneak",
+        "tm:taunt",
+        "tm:alluringvoice",
+        "tm:charm",
+        "tm:safeguard",
+        "tm:protect",
+        "tm:scaryface",
+        "tm:zenheadbutt",
+        "tm:rest",
+        "tm:sleeptalk",
+        "tm:dazzlinggleam",
+        "tm:imprison",
+        "tm:psychic",
+        "tm:substitute",
+        "tm:mistyexplosion",
+        "tm:selfdestruct",
+        "tm:psychup",
+        "tm:mistyterrain",
+        "tm:shadowball",
+        "tm:lightscreen",
+        "tm:reflect",
+        "tm:foulplay",
+        "tm:psyshock",
+        "tm:thunderwave",
+        "tm:thunderbolt",
+        "tm:trick",
+        "tm:terablast",
+        "tm:facade",
+        "tm:eerieimpulse",
+        "tm:helpinghand",
+        "tm:wish",
+        "tm:trickroom",
+        "tm:psychicnoise",
+        "tm:darkpulse",
+        "tm:metronome",
+        "tm:endure",
+        "tm:steelbeam",
+        "tm:flashcannon",
+        "tm:metalsound",
+        "tm:raindance",
+        "tm:sunnyday",
+        "tm:fling",
+        "special:hex",
+        "special:poltergeist",
+        "special:sistertherapy",
+        "special:restart"
     ],
     "features": [],
     "behaviour": {
@@ -68,18 +138,27 @@
         "cobblemon.species.neuroplushie.desc"
     ],
     "drops": {
-
+        "amount": "2",
+        "entries": [
+            {
+                "item": "cobblemon:babiri_berry",
+                "percentage": 30.0
+            },
+            {
+                "item": "neuromon:heart_transmitter",
+                "percentage": 5.0
+            }
+        ]
     },
     "eggGroups": ["undiscovered"],
     "dynamaxBlocked": false,
     "implemented": true,
-    "height": 10,
+    "height": 9,
     "weight": 10,
     "forms": [],
     "labels": [
         "custom",
-        "neuroverse",
-        "legendary"
+        "neuroverse"
     ],
     "evolutions": [
         {
@@ -88,12 +167,14 @@
             "result": "neurosama",
             "consumeHeldItem": false,
             "learnableMoves": [
-
+                "restart"
             ],
             "requirements": [
                 {
-                    "variant": "level",
-                    "minLevel": 56
+                    "variant": "use_move_while_holding",
+                    "heldItem": "neuromon:heart_transmitter",
+                    "move": "alluringvoice",
+                    "amount": 50
                 }
             ]
         }

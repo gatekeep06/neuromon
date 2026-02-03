@@ -1,0 +1,142 @@
+{
+    "species": "cobblemon:minawan",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:minawan",
+            "model": "cobblemon:minawan.geo",
+            "texture": "cobblemon:textures/pokemon/minawan/normal.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/shiny/normal.png"
+        },
+        {
+            "aspects": [
+                "fire-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/fire.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": "cobblemon:textures/pokemon/minawan/fire_emissive.png",
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "water-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/water.png"
+        },
+        {
+            "aspects": [
+                "grass-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/grass.png"
+        },
+        {
+            "aspects": [
+                "electric-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/electric.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": "cobblemon:textures/pokemon/minawan/electric_emissive.png",
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "ice-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/ice.png"
+        },
+        {
+            "aspects": [
+                "fighting-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/fighting.png"
+        },
+        {
+            "aspects": [
+                "poison-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/poison.png"
+        },
+        {
+            "aspects": [
+                "ground-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/ground.png"
+        },
+        {
+            "aspects": [
+                "flying-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/flying.png"
+        },
+        {
+            "aspects": [
+                "psychic-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/psychic.png"
+        },
+        {
+            "aspects": [
+                "bug-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/bug.png"
+        },
+        {
+            "aspects": [
+                "rock-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/rock.png"
+        },
+        {
+            "aspects": [
+                "ghost-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/ghost.png"
+        },
+        {
+            "aspects": [
+                "dragon-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/dragon.png"
+        },
+        {
+            "aspects": [
+                "dark-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/dark.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": "cobblemon:textures/pokemon/minawan/dark_emissive.png",
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "steel-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/steel.png"
+        },
+        {
+            "aspects": [
+                "fairy-minawan"
+            ],
+            "texture": "cobblemon:textures/pokemon/minawan/fairy.png"
+        }
+    ]
+}

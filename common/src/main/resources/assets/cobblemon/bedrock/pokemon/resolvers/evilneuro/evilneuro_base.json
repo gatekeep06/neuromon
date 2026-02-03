@@ -1,0 +1,19 @@
+{
+    "species": "cobblemon:evilneuro",
+    "order": 0,
+    "variations": [
+        {
+            "aspects": [],
+            "poser": "cobblemon:evilneuro",
+            "model": "cobblemon:evilneuro.geo",
+            "texture": "cobblemon:textures/pokemon/evilneuro/evilneuro.png",
+            "layers": []
+        },
+        {
+            "aspects": [
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/evilneuro/evilneuro_shiny.png"
+        }
+    ]
+}

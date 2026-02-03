@@ -1,10 +1,12 @@
 {
     "rootBone": "neuroplushie",
-    "portraitScale": 1.2,
-    "portraitTranslation": [-0.1, 2.3, 0],
-    "profileScale": 0.45,
-    "profileTranslation": [0, 1.1, 0],
-    "animations": {},
+    "portraitScale": 1.35,
+    "portraitTranslation": [-0.03, 0.23, 0],
+    "profileScale": 0.6,
+    "profileTranslation": [0, 0.9, 0],
+    "animations": {
+        "cry": "q.bedrock_stateful('neuroplushie', 'cry')"
+    },
     "poses": {
         "battle-standing": {
             "poseTypes": ["STAND"],
@@ -21,6 +23,9 @@
                 "q.look('head_ai', 1, 1, 0, 0, 180, -180)",
                 "q.bedrock('neuroplushie', 'ground_idle')"
             ],
+            "quirks": [
+                "q.bedrock_quirk('neuroplushie', 'idle_quirk')"
+            ],
             "transformedParts": [
                 {
                     "part": "magic",
@@ -33,6 +38,9 @@
             "animations": [
                 "q.look('head_ai', 1, 1, 0, 0, 180, -180)",
                 "q.bedrock('neuroplushie', 'ground_walk')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('neuroplushie', 'walk_quirk')"
             ],
             "transformedParts": [
                 {
@@ -74,6 +82,43 @@
                 "q.bedrock('neuroplushie', 'air_fly')"
             ],
             "transformedParts": [
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.look('shoulder_pivot', 1, 1, 360, -360, 360, -360)",
+                "q.bedrock('neuroplushie', 'shoulder_left')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [0, -6, 8.5]
+                },
+                {
+                    "part": "shoulder_pivot",
+                    "position": [-5.5, 0, 0]
+                },
+                {
+                    "part": "magic",
+                    "isVisible": false
+                }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.bedrock('neuroplushie', 'shoulder_right')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [5.5, 0, 8.5]
+                },
                 {
                     "part": "magic",
                     "isVisible": false

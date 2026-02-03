@@ -10,20 +10,46 @@
             "poseTypes": ["STAND"],
             "isBattle": true,
             "animations": [
-                "q.look('head_ai')",
-                "q.bedrock('neurosama', 'battle_idle')"
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 45, -45, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('neurosama', 'battle_idle')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('neurosama', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('neurosama', 'angry', q.curve('one'))"
+                }
             ],
-            "quirks": ["q.bedrock_quirk('neurosama', 'blink')"]
+            "quirks": ["q.bedrock_quirk('neurosama', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                }
+            ]
         },
         "standing": {
             "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
             "isBattle": false,
             "animations": [
-                "q.look('head_ai')",
-                "q.bedrock('neurosama', 'ground_idle')"
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 45, -45, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('neurosama', 'ground_idle')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('neurosama', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('neurosama', 'angry', q.curve('one'))"
+                }
             ],
             "quirks": ["q.bedrock_quirk('neurosama', 'blink')"],
             "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                },
                 {
                     "part": "mic",
                     "isVisible": false
@@ -33,11 +59,23 @@
         "walking": {
             "poseTypes": ["WALK"],
             "animations": [
-                "q.look('head_ai')",
-                "q.bedrock('neurosama', 'ground_walk')"
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 60, -60, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('neurosama', 'ground_walk')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('neurosama', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('neurosama', 'angry', q.curve('one'))"
+                }
             ],
             "quirks": ["q.bedrock_quirk('neurosama', 'blink')"],
             "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                },
                 {
                     "part": "mic",
                     "isVisible": false

@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:staz",
+    "speciesId": "cobblemon:staz",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

@@ -1,0 +1,73 @@
+{
+    "name": "Staz",
+    "nationalPokedexNumber": 2128,
+    "baseStats": {
+        "hp": 80,
+        "attack": 30,
+        "defence": 60,
+        "special_attack": 30,
+        "special_defence": 75,
+        "speed": 180
+    },
+    "maleRatio": 1.0,
+    "catchRate": 45,
+    "baseScale": 0.8,
+    "baseExperienceYield": 100,
+    "baseFriendship": 70,
+    "evYield": {
+        "speed": 2
+    },
+    "experienceGroup": "medium_slow",
+    "hitbox": {
+        "width": 1,
+        "height": 2,
+        "fixed": false
+    },
+    "primaryType": "psychic",
+    "abilities": [
+        "trace",
+        "keeneye",
+        "h:shadowtag"
+    ],
+    "moves": [
+
+    ],
+    "features": [],
+    "behaviour": {
+        "herd": {
+            "maxSize": 10,
+            "toleratedLeaders": [
+                {
+                    "pokemon": "vedal",
+                    "tier": 1,
+                    "ignoresLevel": true
+                }
+            ]
+        }
+    },
+    "pokedex": [
+        "cobblemon.species.staz.desc"
+    ],
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "cobblemon:black_glasses",
+                "percentage": 10.0
+            }
+        ]
+    },
+    "eggCycles": 20,
+    "eggGroups": [
+        "field",
+        "human_like"
+    ],
+    "dynamaxBlocked": false,
+    "implemented": true,
+    "height": 15,
+    "weight": 400,
+    "labels": [
+        "custom",
+        "neuroverse"
+    ]
+}

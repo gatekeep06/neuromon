@@ -7,13 +7,26 @@
             "poser": "cobblemon:studysama",
             "model": "cobblemon:studysama.geo",
             "texture": "cobblemon:textures/pokemon/studysama/studysama.png",
-            "layers": []
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": "cobblemon:textures/pokemon/studysama/studysama_emissive.png",
+                    "emissive": true
+                }
+            ]
         },
         {
             "aspects": [
                 "shiny"
             ],
-            "texture": "cobblemon:textures/pokemon/studysama/studysama.png"
+            "texture": "cobblemon:textures/pokemon/studysama/studysama_shiny.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": "cobblemon:textures/pokemon/studysama/studysama_emissive.png",
+                    "emissive": true
+                }
+            ]
         }
     ]
 }

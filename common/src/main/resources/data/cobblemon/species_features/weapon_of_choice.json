@@ -1,0 +1,15 @@
+{
+    "type": "choice",
+    "keys": [
+        "weapon_of_choice"
+    ],
+    "default": "harpoon",
+    "choices": [
+        "harpoon",
+        "bat",
+        "pipe",
+        "guitar"
+    ],
+    "isAspect": true,
+    "aspectFormat": "{{choice}}-of-choice"
+}

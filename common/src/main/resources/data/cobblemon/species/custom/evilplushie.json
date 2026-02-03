@@ -1,30 +1,125 @@
 {
-    "implemented": true,
     "name": "Evilplushie",
-    "nationalPokedexNumber": 2124,
+    "nationalPokedexNumber": 2123,
+    "baseStats": {
+        "hp": 80,
+        "attack": 95,
+        "defence": 80,
+        "special_attack": 45,
+        "special_defence": 75,
+        "speed": 65
+    },
+    "maleRatio": 0.0,
+    "catchRate": 190,
+    "baseScale": 0.6,
+    "baseExperienceYield": 40,
+    "baseFriendship": 50,
+    "evYield": {
+        "attack": 2
+    },
+    "experienceGroup": "slow",
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
     "primaryType": "dark",
     "abilities": [
         "prankster",
         "h:prankster"
     ],
-    "baseStats": {
-        "hp": 38,
-        "attack": 41,
-        "defence": 40,
-        "special_attack": 50,
-        "special_defence": 65,
-        "speed": 65
-    },
+    "shoulderMountable": true,
+    "moves": [
+        "1:scratch",
+        "1:flatter",
+        "1:swagger",
+        "1:leer",
+        "5:brutalswing",
+        "10:knockoff",
+        "12:snarl",
+        "18:meanlook",
+        "21:frustration",
+        "25:alluringvoice",
+        "28:faketears",
+        "32:torment",
+        "36:screech",
+        "42:beatup",
+        "50:stompingtantrum",
+        "56:outrage",
+        "60:foulplay",
+        "65:spiritbreak",
+        "85:bulkup",
+        "tm:teleport",
+        "tm:confuseray",
+        "tm:nightshade",
+        "tm:shadowsneak",
+        "tm:thief",
+        "tm:takedown",
+        "tm:protect",
+        "tm:metronome",
+        "tm:rest",
+        "tm:sleeptalk",
+        "tm:bodyslam",
+        "tm:bodypress",
+        "tm:taunt",
+        "tm:substitute",
+        "tm:focusblast",
+        "tm:voltswitch",
+        "tm:nastyplot",
+        "tm:throatchop",
+        "tm:playrough",
+        "tm:lashout",
+        "tm:disarmingvoice",
+        "tm:sing",
+        "tm:boomburst",
+        "tm:psychicnoise",
+        "tm:brickbreak",
+        "tm:firepunch",
+        "tm:thunderpunch",
+        "tm:icepunch",
+        "tm:fling",
+        "tm:trick",
+        "tm:imprison",
+        "tm:shadowclaw",
+        "tm:reflect",
+        "tm:lightscreen",
+        "tm:trailblaze",
+        "tm:willowisp",
+        "tm:darkpulse",
+        "tm:burningjealousy",
+        "tm:metalsound",
+        "tm:irondefense",
+        "tm:nightslash",
+        "tm:guillotine",
+        "tm:stoneedge",
+        "tm:ironhead",
+        "tm:stealthrock",
+        "tm:falseswipe",
+        "tm:xscissor",
+        "tm:closecombat",
+        "tm:terablast",
+        "special:hex",
+        "special:poltergeist",
+        "special:sistertherapy",
+        "special:liquidation",
+        "special:woodhammer",
+        "special:meteormash",
+        "special:supercellslam"
+    ],
+    "features": [],
     "behaviour": {
-        "resting": {
-            "canSleep": true,
-            "willSleepOnBed": true,
-            "light": "0-4"
-        },
         "moving": {
             "walk": {
-                "walkSpeed": 0.2
+                "walkSpeed": "0.2"
+            },
+            "fly": {
+                "canFly": true,
+                "flySpeedHorizontal": "1.0"
             }
+        },
+        "dampensVibrations": true,
+        "combat": {
+            "willFlee": false
         },
         "herd": {
             "maxSize": 10,
@@ -37,46 +132,101 @@
             ]
         }
     },
-    "catchRate": 190,
-    "maleRatio": 0,
-    "shoulderMountable": false,
+    "pokedex": [
+        "cobblemon.species.evilplushie.desc"
+    ],
+    "drops": {
+        "amount": "2",
+        "entries": [
+            {
+                "item": "cobblemon:chople_berry",
+                "percentage": 30.0
+            },
+            {
+                "item": "neuromon:baleful_harpoon",
+                "percentage": 5.0
+            }
+        ]
+    },
+    "eggGroups": ["undiscovered"],
+    "dynamaxBlocked": false,
+    "implemented": true,
+    "height": 9,
+    "weight": 10,
     "forms": [],
-    "features": [],
-    "baseExperienceYield": 60,
-    "experienceGroup": "medium_fast",
-    "eggCycles": 20,
-    "eggGroups": [
-        "field"
-    ],
-    "drops": {},
-    "moves": [
-
-    ],
     "labels": [
         "custom",
         "neuroverse"
     ],
-    "pokedex": [
-        "cobblemon.species.evilplushie.desc"
+    "evolutions": [
+        {
+            "id": "evilplushie_evilneuro_harpoon",
+            "variant": "level_up",
+            "result": "evilneuro weapon_of_choice=harpoon",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "boom"
+            ],
+            "requirements": [
+                {
+                    "variant": "defeat_while_hodling",
+                    "heldItem": "neuromon:baleful_harpoon",
+                    "target": "",
+                    "amount": 30
+                }
+            ]
+        },
+        {
+            "id": "evilplushie_evilneuro_bat",
+            "variant": "level_up",
+            "result": "evilneuro weapon_of_choice=bat",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "boom"
+            ],
+            "requirements": [
+                {
+                    "variant": "defeat_while_hodling",
+                    "heldItem": "neuromon:ominous_bat",
+                    "target": "",
+                    "amount": 30
+                }
+            ]
+        },
+        {
+            "id": "evilplushie_evilneuro_pipe",
+            "variant": "level_up",
+            "result": "evilneuro weapon_of_choice=pipe",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "boom"
+            ],
+            "requirements": [
+                {
+                    "variant": "defeat_while_hodling",
+                    "heldItem": "neuromon:sinister_pipe",
+                    "target": "",
+                    "amount": 30
+                }
+            ]
+        },
+        {
+            "id": "evilplushie_evilneuro_guitar",
+            "variant": "level_up",
+            "result": "evilneuro weapon_of_choice=guitar",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "boom"
+            ],
+            "requirements": [
+                {
+                    "variant": "defeat_while_hodling",
+                    "heldItem": "neuromon:eerie_guitar",
+                    "target": "",
+                    "amount": 30
+                }
+            ]
+        }
     ],
-    "evolutions": [],
-    "baseScale": 0.6,
-    "hitbox": {
-        "width": 0.9,
-        "height": 3,
-        "fixed": false
-    },
-    "baseFriendship": 50,
-    "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 1
-    },
-    "height": 6,
-    "weight": 99,
-    "aspects": [],
-    "cannotDynamax": false
+    "preEvolution": "studysama"
 }

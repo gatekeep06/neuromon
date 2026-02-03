@@ -1,0 +1,86 @@
+{
+    "rootBone": "evilneuro",
+    "portraitScale": 1.2,
+    "portraitTranslation": [-0.1, 2.3, 0],
+    "profileScale": 0.45,
+    "profileTranslation": [0, 1.1, 0],
+    "animations": {},
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 45, -45, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('evilneuro', 'battle_idle')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('evilneuro', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('evilneuro', 'angry', q.curve('one'))"
+                }
+            ],
+            "quirks": ["q.bedrock_quirk('evilneuro', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                }
+            ]
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": [
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 45, -45, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('evilneuro', 'ground_idle')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('evilneuro', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('evilneuro', 'angry', q.curve('one'))"
+                }
+            ],
+            "quirks": ["q.bedrock_quirk('evilneuro', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                },
+                {
+                    "part": "harpoon",
+                    "isVisible": false
+                }
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look_with_eyes('head_ai', 2, 'iris_left', 'iris_right', 70, -45, 60, -60, 2, 0.75, -0.75, 0, 0)",
+                "q.bedrock('evilneuro', 'ground_walk')",
+                {
+                    "condition": "q.is_pokemon != 1 || q.has_aspect('mood-happy')",
+                    "animation": "q.bedrock('evilneuro', 'happy', q.curve('one'))"
+                },
+                {
+                    "condition": "q.is_pokemon == 1 && q.has_aspect('mood-angry')",
+                    "animation": "q.bedrock('evilneuro', 'angry', q.curve('one'))"
+                }
+            ],
+            "quirks": ["q.bedrock_quirk('evilneuro', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "gymbag",
+                    "isVisible": false
+                },
+                {
+                    "part": "harpoon",
+                    "isVisible": false
+                }
+            ]
+        }
+    }
+}

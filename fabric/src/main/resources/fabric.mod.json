@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.metacontent.fabric.ExampleModFabric"
+      "com.metacontent.fabric.NeuromonFabric"
     ],
     "client": [
-      "com.metacontent.fabric.client.ExampleModFabricClient"
+      "com.metacontent.fabric.client.NeuromonFabricClient"
     ]
   },
   "mixins": [

@@ -1,14 +1,17 @@
 {
     "type": "cobblemon:simple_pokedex_def",
-    "id": "neuromon:neuroverse",
+    "id": "cobblemon:neuroverse",
     "sortOrder": 21,
     "entries": [
-        "neuromon:studysama",
-        "neuromon:neuroplushie",
-        "neuromon:neurosama",
-        "neuromon:evilplushie",
-        "neuromon:evilneuro",
-        "neuromon:vedal",
-        "neuromon:gymbag"
+        "cobblemon:studysama",
+        "cobblemon:neuroplushie",
+        "cobblemon:evilplushie",
+        "cobblemon:neurosama",
+        "cobblemon:evilneuro",
+        "cobblemon:vedal",
+        "cobblemon:gymbag",
+        "cobblemon:staz",
+        "cobblemon:minawan",
+        "cobblemon:cerber"
     ]
 }
