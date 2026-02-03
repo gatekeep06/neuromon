@@ -1,0 +1,28 @@
+{
+    "enabled": true,
+    "neededInstalledMods": ["neuromon"],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "vedal-1",
+            "pokemon": "vedal",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "ultra-rare",
+            "level": "5-32",
+            "weight": 8.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_swamp",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_mountain"
+                ]
+            }
+        }
+    ]
+}
