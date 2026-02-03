@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " EI",
+        "GWE",
+        "FG "
+    ],
+    "key": {
+        "E": {
+            "item": "minecraft:echo_shard"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "W": {
+            "item": "minecraft:light_blue_wool"
+        },
+        "F": {
+            "item": "cobblemon:fairy_gem"
+        }
+    },
+    "result": {
+        "id": "neuromon:heart_transmitter"
+    }
+}

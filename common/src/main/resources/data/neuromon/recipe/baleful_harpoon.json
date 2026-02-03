@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " WI",
+        "LI ",
+        "DT "
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:lead"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "T": {
+            "item": "minecraft:ghast_tear"
+        },
+        "W": {
+            "item": "minecraft:red_wool"
+        },
+        "D": {
+            "item": "cobblemon:dark_gem"
+        }
+    },
+    "result": {
+        "id": "neuromon:baleful_harpoon"
+    }
+}
