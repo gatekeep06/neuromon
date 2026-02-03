@@ -1,0 +1,50 @@
+{
+    "enabled": true,
+    "neededInstalledMods": ["neuromon"],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "gymbag-1",
+            "pokemon": "gymbag",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "1-25",
+            "weight": 8.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_sky",
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_magical"
+                ]
+            }
+        },
+        {
+            "id": "gymbag-2",
+            "pokemon": "gymbag",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 10.0,
+            "condition": {
+                "timeRange": "18000-20500",
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_sky",
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_magical"
+                ]
+            }
+        }
+    ]
+}
