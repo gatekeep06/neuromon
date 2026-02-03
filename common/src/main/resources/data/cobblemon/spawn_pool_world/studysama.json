@@ -1,0 +1,33 @@
+{
+    "enabled": true,
+    "neededInstalledMods": ["neuromon"],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "studysama-1",
+            "pokemon": "studysama",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "ultra-rare",
+            "level": "5-21",
+            "weight": 5.0,
+            "weightMultiplier": {
+                "multiplier": 5,
+                "condition": {
+                    "moonPhase": 0
+                }
+            },
+            "condition": {
+                "timeRange": "night",
+                "biomes": [
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_magical"
+                ]
+            }
+        }
+    ]
+}
