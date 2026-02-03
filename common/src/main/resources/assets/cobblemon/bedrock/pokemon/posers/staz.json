@@ -1,9 +1,9 @@
 {
     "rootBone": "staz",
     "portraitScale": 1.2,
-    "portraitTranslation": [-0.1, 2.3, 0],
-    "profileScale": 0.45,
-    "profileTranslation": [0, 1.1, 0],
+    "portraitTranslation": [-0.1, 1.26, 0],
+    "profileScale": 0.6,
+    "profileTranslation": [0, 0.81, 0],
     "animations": {},
     "poses": {
         "battle-standing": {
@@ -20,6 +20,12 @@
             "animations": [
                 "q.look('head_ai')",
                 "q.bedrock('staz', 'ground_idle')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "camera",
+                    "isVisible": false
+                }
             ]
         },
         "walking": {
@@ -27,6 +33,12 @@
             "animations": [
                 "q.look('head_ai')",
                 "q.bedrock('staz', 'ground_walk')"
+            ],
+            "transformedParts": [
+                {
+                    "part": "camera",
+                    "isVisible": false
+                }
             ]
         }
     }
