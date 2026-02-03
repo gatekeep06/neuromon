@@ -1,13 +1,6 @@
 {
-    "implemented": true,
     "name": "Gymbag",
     "nationalPokedexNumber": 2127,
-    "primaryType": "normal",
-    "secondaryType": "steel",
-    "abilities": [
-        "levitate",
-        "h:levitate"
-    ],
     "baseStats": {
         "hp": 60,
         "attack": 95,
@@ -16,66 +9,27 @@
         "special_defence": 65,
         "speed": 85
     },
-    "behaviour": {
-        "resting": {
-            "canSleep": true,
-            "willSleepOnBed": true,
-            "depth": "normal",
-            "light": "0-4"
-        },
-        "moving": {
-            "fly": {
-                "canFly": true
-            },
-            "walk": {
-                "canWalk": false
-            },
-            "wanderChance": 60
-        },
-        "herd": {
-            "maxSize": 10,
-            "followDistance": "2-4",
-            "toleratedLeaders": [
-                {
-                    "pokemon": "gymbag shiny=false",
-                    "tier": 1
-                },
-                {
-                    "pokemon": "gymbag shiny",
-                    "tier": 2
-                },
-                {
-                    "pokemon": "vedal",
-                    "tier": 3,
-                    "ignoresLevel": true
-                },
-                {
-                    "pokemon": "neurosama",
-                    "tier": 4,
-                    "ignoresLevel": true
-                }
-            ]
-        }
-    },
-    "catchRate": 100,
     "maleRatio": 0.5,
-    "shoulderMountable": false,
-    "baseExperienceYield": 170,
-    "experienceGroup": "medium_fast",
-    "eggCycles": 15,
-    "eggGroups": [
-        "amorphous",
-        "fairy"
-    ],
-    "drops": {
-        "amount": 3,
-        "entries": [
-            {
-                "item": "minecraft:raw_iron",
-                "quantityRange": "0-3"
-            }
-        ]
+    "catchRate": 75,
+    "baseScale": 0.75,
+    "baseExperienceYield": 150,
+    "baseFriendship": 50,
+    "evYield": {
+        "attack": 1
     },
+    "experienceGroup": "medium_fast",
+    "hitbox": {
+        "width": 0.9,
+        "height": 1.9,
+        "fixed": false
+    },
+    "primaryType": "steel",
+    "secondaryType": "flying",
+    "abilities": [
+        "tintedlens",
+        "klutz",
+        "h:infiltrator"
+    ],
     "moves": [
         "1:odorsleuth",
         "1:tackle",
@@ -96,7 +50,6 @@
         "44:whirlwind",
         "50:gunkshot",
         "55:shiftgear",
-        "egg:explosion",
         "egg:switcheroo",
         "egg:autotomize",
         "egg:refresh",
@@ -136,30 +89,90 @@
         "tutor:toxicspikes",
         "tutor:gravity"
     ],
-    "labels": [
-        "custom",
-        "neuroverse"
-    ],
+    "features": [],
+    "behaviour": {
+        "resting": {
+            "canSleep": true,
+            "willSleepOnBed": true,
+            "depth": "normal",
+            "light": "0-4"
+        },
+        "moving": {
+            "fly": {
+                "canFly": true
+            },
+            "walk": {
+                "canWalk": false
+            },
+            "wanderChance": 60
+        },
+        "herd": {
+            "maxSize": 10,
+            "followDistance": "2-4",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "gymbag shiny=false",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "gymbag shiny",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "vedal",
+                    "tier": 3,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "studysama",
+                    "tier": 4,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "neuroplushie",
+                    "tier": 5,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "evilplushie",
+                    "tier": 5,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "neurosama",
+                    "tier": 6,
+                    "ignoresLevel": true
+                },
+                {
+                    "pokemon": "evilneuro",
+                    "tier": 6,
+                    "ignoresLevel": true
+                }
+            ]
+        }
+    },
     "pokedex": [
         "cobblemon.species.gymbag.desc"
     ],
-    "baseScale": 0.75,
-    "hitbox": {
-        "width": 0.9,
-        "height": 1.9,
-        "fixed": false
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "minecraft:raw_iron",
+                "quantityRange": "0-3"
+            }
+        ]
     },
-    "baseFriendship": 50,
-    "evYield": {
-        "hp": 0,
-        "attack": 1,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-    },
-    "height": 5,
-    "weight": 45,
-    "aspects": [],
-    "cannotDynamax": false
+    "eggCycles": 15,
+    "eggGroups": [
+        "bug"
+    ],
+    "dynamaxBlocked": false,
+    "implemented": true,
+    "height": 4,
+    "weight": 12,
+    "labels": [
+        "custom",
+        "neuroverse"
+    ]
 }
