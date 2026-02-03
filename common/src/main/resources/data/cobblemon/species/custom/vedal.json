@@ -1,20 +1,39 @@
 {
-    "implemented": true,
     "name": "Vedal",
     "nationalPokedexNumber": 2126,
+    "baseStats": {
+        "hp": 120,
+        "attack": 60,
+        "defence": 100,
+        "special_attack": 40,
+        "special_defence": 100,
+        "speed": 30
+    },
+    "maleRatio": 1.0,
+    "catchRate": 45,
+    "baseScale": 0.6,
+    "baseExperienceYield": 160,
+    "baseFriendship": 50,
+    "evYield": {
+        "hp": 2
+    },
+    "experienceGroup": "slow",
+    "hitbox": {
+        "width": 1,
+        "height": 1.6,
+        "fixed": false
+    },
     "primaryType": "fighting",
     "abilities": [
-        "fatheroftheyear",
+        "shellarmor",
+        "sturdy",
         "h:fatheroftheyear"
     ],
-    "baseStats": {
-        "hp": 38,
-        "attack": 41,
-        "defence": 40,
-        "special_attack": 50,
-        "special_defence": 65,
-        "speed": 65
-    },
+    "shoulderMountable": true,
+    "moves": [
+
+    ],
+    "features": [],
     "behaviour": {
         "resting": {
             "canSleep": true,
@@ -24,98 +43,52 @@
         },
         "moving": {
             "walk": {
-                "walkSpeed": 0.1
+                "walkSpeed": "0.2"
             }
         },
         "herd": {
             "maxSize": 5
         }
     },
-    "catchRate": 30,
-    "maleRatio": 1,
-    "shoulderMountable": false,
-    "features": [],
-    "baseExperienceYield": 140,
-    "experienceGroup": "slow",
-    "eggCycles": 50,
-    "eggGroups": [
-        "Undiscovered"
-    ],
-    "drops": {},
-    "moves": [
-
-    ],
-    "labels": [
-        "custom",
-        "neuroverse",
-        "legendary"
-    ],
     "pokedex": [
         "cobblemon.species.vedal.desc"
     ],
-    "evolutions": [],
-    "baseScale": 0.6,
-    "hitbox": {
-        "width": 1,
-        "height": 1.6,
-        "fixed": false
+    "drops": {
+
     },
-    "baseFriendship": 30,
-    "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 1
-    },
+    "eggCycles": 45,
+    "eggGroups": [
+        "field"
+    ],
+    "dynamaxBlocked": false,
+    "implemented": true,
     "height": 7,
     "weight": 907,
-    "aspects": ["tortoise-form"],
-    "cannotDynamax": false,
     "forms": [
         {
             "name": "Giga",
-            "primaryType": "fighting",
-            "maleRatio": 1,
-            "height": 32,
-            "weight": 2042,
-            "pokedex": [
-                "cobblemon.species.vedal-giga.desc"
-            ],
-            "labels": [
-                "custom",
-                "neuroverse",
-                "legendary"
-            ],
-            "aspects": ["giga-form"],
             "baseStats": {
-                "hp": 100,
-                "attack": 160,
-                "defence": 97,
-                "special_attack": 106,
-                "special_defence": 87,
-                "speed": 100
+                "hp": 120,
+                "attack": 150,
+                "defence": 110,
+                "special_attack": 65,
+                "special_defence": 110,
+                "speed": 95
             },
-            "baseExperienceYield": 230,
+            "baseScale": 1.0,
             "hitbox": {
-                "width": 1.2,
-                "height": 2.5,
+                "width": 2,
+                "height": 2,
                 "fixed": false
             },
-            "behaviour": {
-                "moving": {
-                    "walk": {
-                        "walkSpeed": 1
-                    }
-                },
-                "herd": {
-                    "maxSize": 5
-                }
-            },
-            "moves": [],
-            "evolutions": [],
+            "shoulderMountable": false,
+            "height": 25,
+            "weight": 3527,
             "battleOnly": true
         }
+    ],
+    "labels": [
+        "custom",
+        "neuroverse"
     ]
 }
