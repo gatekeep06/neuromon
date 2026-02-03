@@ -111,7 +111,21 @@
         "cobblemon.species.vedal.desc"
     ],
     "drops": {
-
+        "amount": "2",
+        "entries": [
+            {
+                "item": "minecraft:turtle_scute",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "cobblemon:muscle_band",
+                "percentage": 5.0
+            },
+            {
+                "item": "cobblemon:wepear_berry",
+                "percentage": 10.0
+            }
+        ]
     },
     "eggCycles": 45,
     "eggGroups": [
