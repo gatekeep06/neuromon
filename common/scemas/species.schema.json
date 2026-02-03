@@ -12,22 +12,6 @@
                 "special_defence": { "type": "integer" },
                 "speed": { "type": "integer" }
             }
-        }
-    },
-    "type": "object",
-    "properties": {
-        "name": { "type": "string" },
-        "nationalPokedexNumber": { "type": "integer" },
-        "baseStats": { "$ref": "#/$defs/stats" },
-        "maleRatio": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
-        "catchRate": { "type": "integer" },
-        "baseScale": { "type": "number" },
-        "baseExperienceYield": { "type": "integer" },
-        "baseFriendship": { "type": "integer" },
-        "evYield": { "$ref": "#/$defs/stats" },
-        "experienceGroup": {
-            "type": "string",
-            "enum": ["erratic", "fast", "medium_fast", "medium_slow", "slow", "fluctuating"]
         },
         "hitbox": {
             "type": "object",
@@ -38,14 +22,11 @@
                 "fixed": { "type": "boolean" }
             }
         },
-        "primaryType": { "type": "string" },
-        "secondaryType": { "type": "string" },
-        "abilities": {
-            "type": "array",
-            "items": { "type": "string" }
+        "experienceGroup": {
+            "type": "string",
+            "enum": ["erratic", "fast", "medium_fast", "medium_slow", "slow", "fluctuating"]
         },
-        "shoulderMountable": { "type": "boolean" },
-        "shoulderEffects": {
+        "effects": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -59,6 +40,57 @@
                 }
             }
         },
+        "drops": {
+            "type": "object",
+            "properties": {
+                "entries": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "amount": { "type": "string" }
+            }
+        },
+        "eggGroups": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["monster", "water_1", "bug", "flying", "field", "fairy", "grass", "human_like", "water_3", "mineral", "amorphous", "water_2", "ditto", "dragon", "undiscovered"]
+            }
+        },
+        "lightingData": {
+            "type": "object",
+            "properties": {
+                "lightLevel": { "type": "integer" },
+                "liquidGlowMode": {
+                    "type": "string",
+                    "enum": ["LAND", "UNDERWATER", "BOTH"]
+                }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "nationalPokedexNumber": { "type": "integer" },
+        "baseStats": { "$ref": "#/$defs/stats" },
+        "maleRatio": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
+        "catchRate": { "type": "integer" },
+        "baseScale": { "type": "number" },
+        "baseExperienceYield": { "type": "integer" },
+        "baseFriendship": { "type": "integer" },
+        "evYield": { "$ref": "#/$defs/stats" },
+        "experienceGroup": { "$ref": "#/$defs/experienceGroup" },
+        "hitbox": { "$ref": "#/$defs/hitbox" },
+        "primaryType": { "type": "string" },
+        "secondaryType": { "type": "string" },
+        "abilities": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "shoulderMountable": { "type": "boolean" },
+        "shoulderEffects": { "$ref": "#/$defs/effects" },
         "moves": {
             "type": "array",
             "items": { "type": "string" }
@@ -229,26 +261,9 @@
             "type": "array",
             "items": { "type": "string" }
         },
-        "drops": {
-            "type": "object",
-            "properties": {
-                "entries": {
-                    "type": "array",
-                    "items": {
-                        "type": "object"
-                    }
-                },
-                "amount": { "type": "string" }
-            }
-        },
+        "drops": { "$ref": "#/$defs/drops" },
         "eggCycles": { "type": "integer" },
-        "eggGroups": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "enum": ["monster", "water_1", "bug", "flying", "field", "fairy", "grass", "human_like", "water_3", "mineral", "amorphous", "water_2", "ditto", "dragon", "undiscovered"]
-            }
-        },
+        "eggGroups": { "$ref": "#/$defs/eggGroups" },
         "dynamaxBlocked": { "type": "boolean" },
         "implemented": { "type": "boolean" },
         "baseAI": {
@@ -263,7 +278,64 @@
         "weight": { "type": "number" },
         "forms": {
             "type": "array",
-            "items": { "type": "object" }
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "baseStats": { "$ref": "#/$defs/stats" },
+                    "maleRatio": { "type": "number" },
+                    "baseScale": { "type": "number" },
+                    "hitbox": { "$ref": "#/$defs/hitbox" },
+                    "catchRate": { "type": "integer" },
+                    "experienceGroup": { "$ref": "#/$defs/experienceGroup" },
+                    "baseExperienceYield": { "type": "integer" },
+                    "_baseFriendship": { "type": "integer" },
+                    "evYield": { "$ref": "#/$defs/stats" },
+                    "primaryType": { "type": "string" },
+                    "secondaryType": { "type":  "string" },
+                    "shoulderMountable": { "type": "boolean" },
+                    "shoulderEffects": { "$ref": "#/$defs/effects" },
+                    "moves": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "evolutions": {
+                        "type": "array",
+                        "items": { "type": "object" }
+                    },
+                    "abilities": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "drops": { "$ref": "#/$defs/drops" },
+                    "pokedex": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "preEvolution": { "type": "string" },
+                    "standingEyeHeight": { "type": "number" },
+                    "swimmingEyeHeight": { "type": "number" },
+                    "flyingEyeHeight": { "type": "number" },
+                    "labels": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "dynamaxBlocked": { "type": "boolean" },
+                    "eggGroups": { "$ref": "#/$defs/eggGroups" },
+                    "height": { "type": "number" },
+                    "weight": { "type": "number" },
+                    "riding": { "type": "object" },
+                    "requiredMove": { "type": "string" },
+                    "requiredItem": { "type": "string" },
+                    "requiredItems": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "gigantamaxMove": { "type": "string" },
+                    "battleTheme": { "type": "string" },
+                    "lightingData": { "$ref": "#/$defs/lightingData" }
+                }
+            }
         },
         "riding": { "type": "object" },
         "labels": {
@@ -276,15 +348,6 @@
         },
         "preEvolution": { "type": "string" },
         "battleTheme": { "type": "string" },
-        "lightingData": {
-            "type": "object",
-            "properties": {
-                "lightLevel": { "type": "integer" },
-                "liquidGlowMode": {
-                    "type": "string",
-                    "enum": ["LAND", "UNDERWATER", "BOTH"]
-                }
-            }
-        }
+        "lightingData": { "$ref": "#/$defs/lightingData" }
     }
 }
