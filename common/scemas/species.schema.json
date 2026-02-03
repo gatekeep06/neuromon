@@ -333,7 +333,8 @@
                     },
                     "gigantamaxMove": { "type": "string" },
                     "battleTheme": { "type": "string" },
-                    "lightingData": { "$ref": "#/$defs/lightingData" }
+                    "lightingData": { "$ref": "#/$defs/lightingData" },
+                    "battleOnly": { "type": "boolean" }
                 }
             }
         },
