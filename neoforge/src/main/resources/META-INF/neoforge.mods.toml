@@ -1,17 +1,17 @@
 modLoader = "kotlinforforge"
 loaderVersion = "[4,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/gatekeep06/neuromon/issues"
+license = "MPL-2.0"
 
 [[mods]]
 modId = "neuromon"
 version = "${version}"
 displayName = "Neuromon"
-authors = "Me!"
+authors = "gatekeep06"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+A Cobblemon side mod that adds fakemon based on Neuro-sama and Evil Neuro, as well as related characters and V-Tubers.
 '''
-#logoFile = ""
+logoFile = "assets/neuromon/icon.png"
 
 [[dependencies.neuromon]]
 modId = "neoforge"
@@ -24,6 +24,13 @@ side = "BOTH"
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.neuromon]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.7.0,)"
 ordering = "NONE"
 side = "BOTH"
 
