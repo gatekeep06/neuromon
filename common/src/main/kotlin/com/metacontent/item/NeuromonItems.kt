@@ -28,5 +28,7 @@ object NeuromonItems : NeuromonRegistry<Registry<Item>, ResourceKey<Registry<Ite
     fun injectHeldItems(consumer: (ItemLike) -> Unit) {
         consumer(HEART_TRANSMITTER)
         consumer(BALEFUL_HARPOON)
+        consumer(OMINOUS_BAT)
+        consumer(SINISTER_PIPE)
     }
 }
